@@ -16,6 +16,9 @@ Plug 'tpope/vim-fugitive'
 Plug 'altercation/vim-colors-solarized'
 Plug 'ervandew/supertab'
 Plug 'taketwo/vim-ros'
+Plug 'eugen0329/vim-esearch'
+Plug 'chazy/cscope_maps'
+Plug 'daeyun/vim-matlab'
 
 " Initialize plugin system
 call plug#end()
@@ -41,5 +44,13 @@ let g:syntastic_check_on_wq = 0
 " spell check
 set spell spelllang=en_us
 
+" YouCompleteMe
+let g:ycm_global_ycm_extra_conf = '/home/zhilong/.vim/plugged/youcompleteme/third_party/ycmd/cpp/ycm/.ycm_extra_conf.py'
+
+" cscope
+
+
 " jcon file
 autocmd BufRead,BufNewFile *.jcon set syntax=python 
+
+set tags=tags
