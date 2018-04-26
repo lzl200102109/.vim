@@ -9,7 +9,12 @@ git clone git@github.com:lzl200102109/.vim.git
 ```
 ln -s ~/.vim/.vimrc ~/.vimrc
 ```
-4. run update in vim
+4. install clang completer for youcompleteme
+```
+cd ~/.vim/plugged/youcompleteme
+./install.sh --clang-completer
+```
+5. run update in vim
 ```
 :PlugUpdate
 ```
