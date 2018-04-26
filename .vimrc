@@ -1,4 +1,5 @@
 :set number
+:set hlsearch
 
 " Specify a directory for plugins
 call plug#begin('~/.vim/plugged')
@@ -29,6 +30,7 @@ Plug 'taketwo/vim-ros'
 Plug 'eugen0329/vim-esearch'
 Plug 'chazy/cscope_maps'
 Plug 'daeyun/vim-matlab'
+Plug 'vim-scripts/highlight_word_under_cursor.vim'
 
 " Initialize plugin system
 call plug#end()
@@ -87,4 +89,8 @@ let g:ycm_global_ycm_extra_conf = '/home/zhilong/.vim/plugged/youcompleteme/thir
 " jcon file
 autocmd BufRead,BufNewFile *.jcon set syntax=python 
 
+set autoread
+
 set tags=tags
+
+
