@@ -5,6 +5,7 @@
 call plug#begin('~/.vim/plugged')
 
 Plug 'scrooloose/nerdtree'
+Plug 'jistr/vim-nerdtree-tabs'
 Plug 'chiel92/vim-autoformat'
 Plug 'google/vim-codefmt'
 Plug 'google/vim-maktaba'
@@ -24,6 +25,7 @@ Plug 'eugen0329/vim-esearch'
 Plug 'chazy/cscope_maps'
 Plug 'daeyun/vim-matlab'
 Plug 'vim-scripts/highlight_word_under_cursor.vim'
+Plug 'mileszs/ack.vim'
 
 " Initialize plugin system
 call plug#end()
@@ -76,6 +78,24 @@ let g:ycm_global_ycm_extra_conf = '/home/jingchi/.vim/plugged/youcompleteme/thir
 
 " cscope
 
+
+"" The Silver Searcher
+"if executable('ag')
+"  " Use ag over grep
+"  set grepprg=ag\ --nogroup\ --nocolor
+"  " Use ag in CtrlP for listing files. Lightning fast and respects .gitignore
+"  let g:ctrlp_user_command = 'ag %s -l --nocolor -g ""'
+"  " ag is fast enough that CtrlP doesn't need to cache
+"  let g:ctrlp_use_caching = 0
+"endif
+"" bind K to grep word under cursor
+"nnoremap K :grep! "\b<C-R><C-W>\b"<CR>:cw<CR>
+"" bind \ (backward slash) to grep shortcut
+"command -nargs=+ -complete=file -bar Ag silent! grep! <args>|cwindow|redraw!
+"nnoremap \ :Ag<SPACE>
+
+" Ack
+nnoremap \ :Ack<SPACE>
 
 " jcon file
 autocmd BufRead,BufNewFile *.jcon set syntax=python 
