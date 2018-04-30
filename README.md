@@ -17,7 +17,7 @@ ln -s ~/.vim/.vimrc ~/.vimrc
 cd ~/.vim/plugged/youcompleteme
 ./install.sh --clang-completer
 ```
-5. install `Ack`
+5. install `Ack` for advanced keyword search in current project
 ```
 sudo apt-get install ack-grep
 ```
