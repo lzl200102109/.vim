@@ -17,3 +17,7 @@ ln -s ~/.vim/.vimrc ~/.vimrc
 cd ~/.vim/plugged/youcompleteme
 ./install.sh --clang-completer
 ```
+5. install `Ack`
+```
+sudo apt-get install ack-grep
+```
