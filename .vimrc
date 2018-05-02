@@ -74,6 +74,7 @@ augroup END
 set spell spelllang=en_us
 
 " YouCompleteMe
+set encoding=utf-8
 let g:ycm_global_ycm_extra_conf = '/home/jingchi/.vim/plugged/youcompleteme/third_party/ycmd/cpp/ycm/.ycm_extra_conf.py'
 
 " cscope
