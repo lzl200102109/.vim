@@ -21,3 +21,8 @@ cd ~/.vim/plugged/youcompleteme
 ```
 sudo apt-get install ack-grep
 ```
+6. (optional) create a soft link to `~/.bashrc`
+```
+ln -s ~/.vim/.bashrc ~/.bashrc
+
+```
