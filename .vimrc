@@ -20,7 +20,7 @@ Plug 'tpope/vim-surround'
 Plug 'tpope/vim-fugitive'
 Plug 'altercation/vim-colors-solarized'
 Plug 'ervandew/supertab'
-Plug 'taketwo/vim-ros'
+"Plug 'taketwo/vim-ros'
 Plug 'eugen0329/vim-esearch'
 Plug 'chazy/cscope_maps'
 Plug 'daeyun/vim-matlab'
@@ -71,7 +71,7 @@ augroup autoformat_settings
 augroup END
 
 " spell check
-set spell spelllang=en_us
+"set spell spelllang=en_us
 
 " YouCompleteMe
 set encoding=utf-8

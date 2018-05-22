@@ -49,3 +49,8 @@ lon
 SpeedPIDLongitudinal
 planning
 planning
+nvidia/!
+gibraltar/!
+jlaunch/!
+NERDTree/!
+Syntastic/!

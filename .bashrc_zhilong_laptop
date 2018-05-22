@@ -94,6 +94,16 @@ alias l='ls -CF'
 alias ss='source /home/zhilong/gibraltar/setup.bash'
 alias j='jlaunch'
 
+# first time running a new container, run the following commands
+# docker run -it tensorflow/tensorflow bash
+# docker rename <container-tag> tensorflow_cpu
+# nvidia-docker run -it tensorflow/tensorflow:latest-gpu bash
+# nvidia-docker rename <container-tag> tensorflow_gpu
+alias stf_cpu='docker start -ai tensorflow_cpu'
+alias stf_gpu='nvidia-docker start -ai tensorflow_gpu'
+alias tf_cpu='docker exec -it tensorflow_cpu bash'
+alias tf_gpu='nvidia-docker exec -it tensorflow_gpu bash'
+
 # Add an "alert" alias for long running commands.  Use like so:
 #   sleep 10; alert
 alias alert='notify-send --urgency=low -i "$([ $? = 0 ] && echo terminal || echo error)" "$(history|tail -n1|sed -e '\''s/^\s*[0-9]\+\s*//;s/[;&|]\s*alert$//'\'')"'
