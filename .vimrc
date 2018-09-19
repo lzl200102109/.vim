@@ -12,10 +12,10 @@ Plug 'google/vim-maktaba'
 Plug 'google/vim-codefmt'
 Plug 'rhysd/vim-clang-format'
 Plug 'davidzchen/vim-bazel'
-Plug 'valloric/youcompleteme'
+"Plug 'valloric/youcompleteme'
 Plug 'kien/ctrlp.vim'
 Plug 'bling/vim-airline'
-Plug 'scrooloose/syntastic'
+"Plug 'scrooloose/syntastic'
 Plug 'tpope/vim-surround'
 Plug 'tpope/vim-fugitive'
 Plug 'altercation/vim-colors-solarized'
@@ -42,14 +42,14 @@ let NERDTreeShowBookmarks=1
 let g:NERDTreeMouseMode=3
 
 " Syntastic 
-set statusline+=%#warningmsg#
-set statusline+=%{SyntasticStatuslineFlag()}
-set statusline+=%*
-let g:syntastic_cpp_check_header=1
-let g:syntastic_always_populate_loc_list = 1
-let g:syntastic_auto_loc_list = 1
-let g:syntastic_check_on_open = 1
-let g:syntastic_check_on_wq = 0
+"set statusline+=%#warningmsg#
+"set statusline+=%{SyntasticStatuslineFlag()}
+"set statusline+=%*
+"let g:syntastic_cpp_check_header=1
+"let g:syntastic_always_populate_loc_list = 1
+"let g:syntastic_auto_loc_list = 1
+"let g:syntastic_check_on_open = 1
+"let g:syntastic_check_on_wq = 0
 
 
 " Switch off all auto-indenting
@@ -75,7 +75,7 @@ augroup END
 
 " YouCompleteMe
 set encoding=utf-8
-let g:ycm_global_ycm_extra_conf = '/home/jingchi/.vim/plugged/youcompleteme/third_party/ycmd/cpp/ycm/.ycm_extra_conf.py'
+"let g:ycm_global_ycm_extra_conf = '/home/jingchi/.vim/plugged/youcompleteme/third_party/ycmd/cpp/ycm/.ycm_extra_conf.py'
 
 " cscope
 
