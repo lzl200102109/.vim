@@ -38,7 +38,7 @@ autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isT
 let g:nerdtree_tabs_open_on_console_startup=1
 let NERDTreeShowBookmarks=1
 " For mouse click in NERDTree
-:set mouse=a
+":set mouse=a
 let g:NERDTreeMouseMode=3
 
 " Syntastic 
