@@ -123,17 +123,13 @@ if ! shopt -oq posix; then
   fi
 fi
 export PYTHONPATH=/home/jingchi/caffe/caffe_tim_ssd/python:$PYTHONPATH
-export LD_LIBRARY_PATH=/home/jingchi/caffe/caffe_tim_ssd/build/lib/:$LD_LIBRARY_PATH
 export PATH=$PATH:$HOME/eclipse/cpp-oxygen/eclipse
 export PATH="$PATH:~/arcanist/bin/"
-export PATH=${PATH}:/usr/local/cuda-9.0/bin/
+export PATH=${PATH}:/usr/local/cuda/bin/
 export PATH="$PATH:/usr/bin/bazel"
-export LD_LIBRARY_PATH=${LD_LIBRARY_PATH}:/usr/local/cuda-9.0/lib64
+export LD_LIBRARY_PATH=${LD_LIBRARY_PATH}:/usr/local/cuda/lib64
 source /opt/ros/kinetic/setup.bash
-cd ~/gibraltar
-source setup.bash
-bazel_rosbash::enable_ccache
-source tf_cuda_setup.bash
+source /media/nas/junzhuo/workflow.sh
 
 # uncomment for a colored prompt, if the terminal has the capability; turned
 # off by default to not distract the user: the focus in a terminal window
