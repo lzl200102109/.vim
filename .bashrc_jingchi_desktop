@@ -96,8 +96,7 @@ alias j='jlaunch'
 
 # custom aliases
 alias cds='cd ~/gibraltar/s_loop/src'
-alias cdc='cd ~/gibraltar/s_loop/config'
-alias cdads='cd ~/gibraltar/s_loop/config/simulation/emulator_v2_scenarios'
+alias cdc='cd ~/gibraltar/config_files'
 
 # Add an "alert" alias for long running commands.  Use like so:
 #   sleep 10; alert
@@ -122,14 +121,11 @@ if ! shopt -oq posix; then
     . /etc/bash_completion
   fi
 fi
-export PYTHONPATH=/home/jingchi/caffe/caffe_tim_ssd/python:$PYTHONPATH
-export PATH=$PATH:$HOME/eclipse/cpp-oxygen/eclipse
+
 export PATH="$PATH:~/arcanist/bin/"
-export PATH=${PATH}:/usr/local/cuda/bin/
-export PATH="$PATH:/usr/bin/bazel"
-export LD_LIBRARY_PATH=${LD_LIBRARY_PATH}:/usr/local/cuda/lib64
 source /opt/ros/kinetic/setup.bash
-source /media/nas/junzhuo/workflow.sh
+source /media/nas/buildbarn/workflow.sh
+#source ~/buildbarn-deploy/workflow/workflow.sh
 
 # uncomment for a colored prompt, if the terminal has the capability; turned
 # off by default to not distract the user: the focus in a terminal window
@@ -153,9 +149,7 @@ export VISUAL=vim
 export EDITOR="$VISUAL"
 
 
-cd ~/gibraltar/s_loop
-#clear
+export PATH=$PATH:/opt/julia-1.4.2/bin
 
-#export NVM_DIR="$HOME/.nvm"
-#[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
-#[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+cd ~/gibraltar
+
