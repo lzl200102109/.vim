@@ -15,7 +15,7 @@ ln -s ~/.vim/.vimrc ~/.vimrc
 4. install clang completer for youcompleteme
 ```
 cd ~/.vim/plugged/youcompleteme
-./install.sh --clang-completer
+./install.py --clang-completer
 ```
 5. install `Ack` for advanced keyword search in current project
 ```
