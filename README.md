@@ -26,3 +26,13 @@ sudo apt-get install ack-grep
 ln -s ~/.vim/.bashrc_[...] ~/.bashrc
 
 ```
+7. (optional) NAS:
+  a. copy the credentials to home directory
+```
+cp ~/.vim/.ussmbcredentials ~/
+cp ~/.vim/.gzsmbcredentials ~/
+```
+  b. copy relevant content inside `fstab` to `/etc/fstab`
+```
+cat ~/.vim/fstab
+```
