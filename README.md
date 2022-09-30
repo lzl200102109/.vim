@@ -24,5 +24,4 @@ sudo apt-get install ack-grep
 6. (optional) Create a soft link to `~/.bashrc`.
 ```
 ln -s ~/.vim/.bashrc ~/.bashrc
-
 ```
