@@ -143,6 +143,3 @@ export PS1="\u \[\033[32m\]\w\[\033[33m\]\$(parse_git_branch)\[\033[00m\] $ "
 export VISUAL=vim
 export EDITOR="$VISUAL"
 
-# initialize repository
-cd ~/atlas
-source scripts/meta_setup.bash
