@@ -1,0 +1,12 @@
+#!/bin/sh
+tmux new-session -d
+tmux split-window -v
+tmux split-window -h
+tmux select-pane -t 0
+tmux split-window -h
+tmux send-keys -t "0.0" "cd ~/atlas" C-m
+tmux send-keys -t "0.2" "cd ~/atlas" C-m
+tmux send-keys -t "0.2" "./atlas.sh dev_start" C-m
+tmux send-keys -t "0.2" "./atlas.sh dev_into" C-m
+tmux attach-session -d
+
